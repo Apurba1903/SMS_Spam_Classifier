@@ -2,9 +2,13 @@ import nltk
 import string
 import pickle
 import streamlit as st
-from  nltk.corpus import stopwords
+from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
+# REQUIRED FOR STREAMLIT CLOUD
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 
 def transform_text(text):
